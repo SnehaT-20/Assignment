@@ -30,8 +30,8 @@ class SchoolManagement:
         clas = int(input("Enter student class (1-12): "))
         mobile = input("Enter guardian mobile number: ")
 
-        if 5 <= age <= 18:
-            if 1 <= clas <= 12:
+        if 5 <= age and age <= 18:
+            if 1 <= clas and clas <= 12:
                 if len(mobile) == 10 and mobile.isdigit():
                     self.admission[self.next_student_id] = {
                         "name": name,
