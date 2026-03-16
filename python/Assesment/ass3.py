@@ -34,13 +34,13 @@ class BusReservation:
     def view_routes(self):
         print("\nAvailable Routes:")
         for route, price in self.routes.items():
-            print(f"{route} - ₹{price}")
+            print(f"{route} - {price}")
 
     # -----------------------------------------------------------------------------------------------------------------
 
     def book_ticket(self):
         for route, price in self.routes.items():
-            print(f"{route} - ₹{price}")
+            print(f"{route} - {price}")
         print("\nBook your tickets:")
         name = input("Enter passenger name: ")
         age = int(input("Enter passenger age: "))
